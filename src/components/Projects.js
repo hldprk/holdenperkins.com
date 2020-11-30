@@ -37,32 +37,40 @@ export class Projects extends React.Component {
     async componentDidMount() {
 
         require('dotenv').config();
-        
-        const result = await axios({
-            method: "get",
-            url: `https://api.github.com/users/hldprk/repos`,
-            headers: {
 
-                Authorization: `Bearer ${process.env.REACT_APP_GITHUB_API_KEY}`,
+        try {
+
+            const result = await axios({
+                method: "get",
+                url: `https://api.github.com/users/hldprk/repos`,
+                headers: {
+
+                    Authorization: `Bearer ${process.env.REACT_APP_GITHUB_API_KEY}`,
+                    
+                    "Content-Type": "application/json",
+                    
+                    "Accept": "application/vnd.github.mercy-preview+json" 
                 
-                "Content-Type": "application/json",
-                
-                "Accept": "application/vnd.github.mercy-preview+json" 
-            
-            }
-        });
+                }
+            });
 
 
-        this.setState({ repositories: shuffle(result['data'].map(repository => 
-            <Repository 
-                name={repository.name} 
-                description={repository.description} 
-                language={repository.language}
-                topics={repository.topics}    
-                url={repository.html_url}
-                homepage={repository.homepage}
-            />
-        ))})
+            this.setState({ repositories: shuffle(result['data'].map(repository => 
+                <Repository 
+                    name={repository.name} 
+                    description={repository.description} 
+                    language={repository.language}
+                    topics={repository.topics}    
+                    url={repository.html_url}
+                    homepage={repository.homepage}
+                />
+            ))});
+
+        } catch (error) {
+
+            console.log(error);
+
+        }
 
     }
 

@@ -2,11 +2,11 @@
 
 import {MyFooter} from './MyFooter';
 import React from 'react';
-import Hero from 'react-bulma-components/lib/components/hero';
-import Heading from 'react-bulma-components/lib/components/heading';
+import Hero from 'react-bulma-components/src/components/hero';
+import Heading from 'react-bulma-components/src/components/heading';
 import 'bulma/css/bulma.css'
 import '../index.css'
-import Columns from 'react-bulma-components/lib/components/columns';
+import Columns from 'react-bulma-components/src/components/columns';
 
 
 import {Link} from 'react-router-dom'

@@ -2,11 +2,11 @@
 
 
 import React from 'react';
-import Heading from 'react-bulma-components/lib/components/heading';
-import Container from 'react-bulma-components/lib/components/container';
-import Columns from 'react-bulma-components/lib/components/columns';
-import Box from 'react-bulma-components/lib/components/box';
-import Tag from 'react-bulma-components/lib/components/tag';
+import Heading from 'react-bulma-components/src/components/heading';
+import Container from 'react-bulma-components/src/components/container';
+import Columns from 'react-bulma-components/src/components/columns';
+import Box from 'react-bulma-components/src/components/box';
+import Tag from 'react-bulma-components/src/components/tag';
 
 import 'bulma/css/bulma.css'
 import '../index.css'

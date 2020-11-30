@@ -18,7 +18,7 @@ export class Home extends React.Component {
     render() {
 
 
-        return <body>
+        return <body className='code has-text-weight-normal'>
                     
                     <Hero size='medium'>
                         <Hero.Body>
@@ -28,21 +28,23 @@ export class Home extends React.Component {
                             
                                     <Columns.Column size='two-fifths'>
                             
-                                        <Link to='/home'><Heading className='code has-text-link is-family-monospace' size={2}>Holden Perkins </Heading></Link>
+                                        <Link to='/home'><Heading className='code has-text-link' size={2}>Holden Perkins </Heading></Link>
                                         
-                                        <Heading subtitle className='code pt-4'>
+                                        <Heading subtitle className=' pt-4'>
                                             Reach out to me on <Link to='/github'>GitHub</Link>, <Link to='/linkedin'>LinkedIn</Link>, or at <Link to={() => window.location.replace('mailto:hldprk@gmail.com')}>hldprk@gmail.com</Link>.
                                         </Heading>
                                         
+                                        <Projects/>
+
+                                        <AboutMe/>
+                                   
                                     </Columns.Column>
                             
                                     <Columns.Column></Columns.Column>
                             
                                 </Columns>
 
-                                <AboutMe/>
 
-                                <Projects/>
 
                         </Hero.Body>
                     </Hero>

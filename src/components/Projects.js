@@ -17,11 +17,11 @@ import shuffle from 'shuffle-array';
 
 const Repository = (props) => 
         
-        <Container className='code mr-5 pl-1 mt-5 mb-5 pt-5 pb-4' style={{marginLeft:2+'em', marginRight:2+'em'}}> 
+        <Container className=' mr-5 pl-1 mt-5 mb-5 pt-5 pb-4' style={{marginLeft:2+'em', marginRight:2+'em'}}> 
             <Box>
                 <a href={props.url}><Heading subtitle className='has-text-link has-text-centered mb-5' size={4}>{props.name}</Heading></a>
                 {props.description === null ? <span/> : (<Heading size={5} className='pb-1 has-text-weight-normal'>{`${props.description}`}</Heading>)}
-                {props.home_page === null ? <span/> : <Heading size={6} className='has-text-link has-text-weight-light'>{`${props.homepage}`}</Heading>}
+                {props.home_page === null ? <span/> : <Heading size={6} className='has-text-link'><a href={props.home_page}>{props.homepage}</a></Heading>}
                 {props.topics.map(topic => <Tag className='is-link is-light'>{topic}</Tag>)}                
             </Box>
         </Container>;
@@ -72,13 +72,9 @@ export class Projects extends React.Component {
     render() {
 
 
-        return  <Columns>
-                    <Columns.Column size='one-quarter' className='is-hidden-mobile'></Columns.Column>
-                    <Columns.Column>
-                        <span>{this.state.repositories} </span>
-                    </Columns.Column>
-                    <Columns.Column size='one-quarter' className='is-hidden-mobile'></Columns.Column>
-                </Columns>
+        return <span>{this.state.repositories} </span>
+    
+    
     }
 
 }

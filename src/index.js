@@ -1,15 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './App.scss'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import WebFont from 'webfontloader';
-
-WebFont.load({
-  google: {
-    families: ['Source Code Pro Web:300,400,700', 'monospace']
-  }
-});
 
 ReactDOM.render(
   <React.StrictMode>

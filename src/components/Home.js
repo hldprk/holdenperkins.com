@@ -2,11 +2,10 @@
 
 import {MyFooter} from './MyFooter';
 import React from 'react';
-import Hero from 'react-bulma-components/src/components/hero';
-import Heading from 'react-bulma-components/src/components/heading';
-import 'bulma/css/bulma.css'
-import '../index.css'
-import Columns from 'react-bulma-components/src/components/columns';
+import Hero from 'react-bulma-components/lib/components/hero';
+import Heading from 'react-bulma-components/lib/components/heading';
+import '../App.scss'
+import Columns from 'react-bulma-components/lib/components/columns';
 
 
 import {Link} from 'react-router-dom'
@@ -18,7 +17,7 @@ export class Home extends React.Component {
     render() {
 
 
-        return <body className='code has-text-weight-normal'>
+        return <div className='code has-text-weight-normal'>
                     
                     <Hero size='medium'>
                         <Hero.Body>
@@ -51,7 +50,7 @@ export class Home extends React.Component {
                     
                     <MyFooter/>
 
-                </body>
+                </div>
 
 
     }

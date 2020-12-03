@@ -1,5 +1,6 @@
 {
   "proxy": "http://localhost:3001",
+  "homepage": "holdenperkins.com",
   "name": "holdenperkins.com",
   "version": "0.1.0",
   "private": true,

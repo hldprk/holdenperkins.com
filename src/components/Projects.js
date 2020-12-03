@@ -20,7 +20,7 @@ const Repository = (props) =>
                 <a href={props.url}><Heading subtitle className='has-text-link has-text-centered mb-5 pb-4' size={4}>{props.name}</Heading></a>
                 {props.description === null ? <span/> : (<Heading size={5} className='pb-1 has-text-weight-normal'>{`${props.description}`}</Heading>)}
                 {props.home_page === null ? <span/> : <Heading size={6} className='has-text-link'><a href={props.home_page}>{props.homepage}</a></Heading>}
-                {props.topics.map(topic => <Tag className='is-link is-light'>{topic}</Tag>)}                
+                {props.topics.map(topic => <span><Tag className='is-link is-light'>{topic}</Tag> </span>)}                
             </Box>
 
 

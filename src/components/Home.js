@@ -30,7 +30,7 @@ export class Home extends React.Component {
                                         <Link to='/home'><Heading className='code has-text-link' size={2}>Holden Perkins </Heading></Link>
                                         
                                         <Heading subtitle className=' pt-4'>
-                                            Reach out to me on <Link to='/github'>GitHub</Link>, <Link to='/linkedin'>LinkedIn</Link>, or at <Link to={() => window.location.replace('mailto:hldprk@gmail.com')}>hldprk@gmail.com</Link>.
+                                            Reach out to me on <Link to='/github'>GitHub</Link>, <Link to='/linkedin'>LinkedIn</Link>, or at <Link to='/'>hldprk@gmail.com</Link>.
                                         </Heading>
                                         
                                         <Projects/>

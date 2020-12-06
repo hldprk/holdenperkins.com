@@ -38,7 +38,10 @@ export class Projects extends React.Component {
 
         require('dotenv').config();
 
+        console.log(process.env.REACT_APP_GITHUB_API_KEY);
+        
         try {
+            
 
             const result = await axios({
                 method: "get",

@@ -1,5 +1,4 @@
-@import "~react-bulma-components/src/index.sass";
-
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
 .body {
   margin: 0;

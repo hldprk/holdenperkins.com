@@ -1,1 +1,1 @@
-A website for personal use, boot-strapped using create-react-app, as well as using data fetched from the GitHub API.
+Personal website made using React, Bulma, and Github's REST API. 
